@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SecondActivity" >
+
+    <TextView
+        android:id="@+id/second_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Name:"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/second_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/second_name"
+        android:layout_below="@+id/second_name"
+        android:layout_marginTop="28dp"
+        android:text="Phone:"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/second_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/second_phone"
+        android:layout_below="@+id/second_phone"
+        android:layout_marginTop="27dp"
+        android:text="Age:"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/second_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/second_age"
+        android:layout_below="@+id/second_age"
+        android:layout_marginTop="31dp"
+        android:text="Gender:"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/second_asset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/second_name"
+        android:layout_below="@+id/second_gender"
+        android:layout_marginTop="88dp"
+        android:text="Asset:"
+        android:textSize="21sp" />
+
+    <EditText
+        android:id="@+id/second_edit_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/second_age"
+        android:layout_toRightOf="@+id/second_gender"
+        android:ems="10"
+        android:hint="your phone"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/second_edit_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/second_age"
+        android:layout_alignLeft="@+id/second_edit_phone"
+        android:ems="10"
+        android:hint="your age" />
+
+    <EditText
+        android:id="@+id/second_edit_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/second_phone"
+        android:layout_alignLeft="@+id/second_edit_phone"
+        android:ems="10"
+        android:hint="your name" />
+
+    <Button
+        android:id="@+id/second_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Submit" />
+    
+     <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/second_asset"
+        android:layout_below="@+id/second_gender"
+        android:layout_marginRight="14dp" >
+
+    <RadioButton
+        android:id="@+id/second_male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/second_asset"
+        android:layout_below="@+id/second_gender"
+        android:checked="true"
+        android:text="Male" />
+
+    <RadioButton
+        android:id="@+id/second_female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/second_male"
+        android:layout_below="@+id/second_male"
+        android:text="Female" />
+</RadioGroup>
+    <CheckBox
+        android:id="@+id/second_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/second_asset"
+        android:text="Car" />
+
+    <CheckBox
+        android:id="@+id/second_house"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/second_car"
+        android:layout_alignBottom="@+id/second_car"
+        android:layout_marginLeft="34dp"
+        android:layout_toRightOf="@+id/second_car"
+        android:text="House" />
+
+</RelativeLayout>

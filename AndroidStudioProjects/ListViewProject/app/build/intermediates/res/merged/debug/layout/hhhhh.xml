@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/lv_image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/lv_image2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/lv_text_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jason"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/lv_text_view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tianyu"
+        android:textSize="35sp" />
+
+</LinearLayout><!-- From: file:/Users/jiaweichen/AndroidStudioProjects/ListViewProject/app/src/main/res/layout/hhhhh.xml -->
